@@ -8,12 +8,22 @@ function App() {
   // let counter = 15
 
   const addValue = () => {
+    if (counter < 1000){
     setCounter(counter + 1)
+  }
+  else {
+    setCounter(counter)
+  }
    
   }
 
   const removeValue = () => {
+    if (counter > 0){
     setCounter(counter - 1)
+    }
+    else {
+      setCounter(counter)
+    }
   }
 
 
